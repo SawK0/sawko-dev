@@ -41,12 +41,13 @@ export const projects: Project[] = [
     status: "in-progress", // TODO: add demo link once deployed
   },
   {
-    slug: "resturant-management",
-    name: "Restaurant Ordering",
+    slug: "kitchen-sync",
+    name: "KitchenSync",
     description:
-      "QR-code table ordering system with live order status streamed to customers and staff over WebSockets.",
-    tech: ["FastAPI", "Next.js", "PostgreSQL", "Redis"],
-    status: "planned", // TODO: add github/demo once the rebuilt version exists
+      "QR-code table ordering system with live order status streamed to customers over WebSockets as staff update it.",
+    tech: ["FastAPI", "Next.js", "PostgreSQL", "Redis", "WebSockets"],
+    github: "https://github.com/SawK0/kitchen-sync",
+    status: "in-progress", // TODO: flip to "live" + add demo link once deployed; staff dashboard/auth still unbuilt
   },
   {
     slug: "minifxapp",
