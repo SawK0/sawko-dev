@@ -49,7 +49,7 @@ export function Projects() {
               {project.github ? (
                 <a
                   href={project.github}
-                  className="underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-600 dark:decoration-neutral-700 dark:hover:decoration-neutral-400"
+                  className="text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
                 >
                   Code
                 </a>
@@ -57,7 +57,7 @@ export function Projects() {
               {project.demo ? (
                 <a
                   href={project.demo}
-                  className="underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-600 dark:decoration-neutral-700 dark:hover:decoration-neutral-400"
+                  className="text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
                 >
                   Live demo
                 </a>

@@ -1,4 +1,5 @@
 import { skills } from "@/data/profile";
+import { skillIcons } from "@/data/skill-icons";
 
 export function Skills() {
   return (
@@ -11,14 +12,20 @@ export function Skills() {
               {category}
             </dt>
             <dd className="mt-2 flex flex-wrap gap-2">
-              {items.map((item) => (
-                <span
-                  key={item}
-                  className="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200"
-                >
-                  {item}
-                </span>
-              ))}
+              {items.map((item) => {
+                const icons = skillIcons[item];
+                return (
+                  <span
+                    key={item}
+                    className="flex items-center gap-1.5 rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200"
+                  >
+                    {icons?.map((Icon, i) => (
+                      <Icon key={i} className="text-accent" size={14} />
+                    ))}
+                    {item}
+                  </span>
+                );
+              })}
             </dd>
           </div>
         ))}

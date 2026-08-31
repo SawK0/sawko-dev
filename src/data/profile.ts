@@ -2,7 +2,7 @@ export const profile = {
   name: "Saw Ko",
   role: "Full-Stack Engineer",
   tagline:
-    "Full-stack engineer with 4+ years shipping web, iOS, and backend systems. Open to full-stack roles.",
+    "Full-stack engineer with 4+ years shipping web, iOS, and backend systems.",
   bio: "I'm a full-stack engineer with 4+ years of experience across web, iOS, and backend systems, building full-stack web apps and native iOS apps professionally, and side projects in Next.js, NestJS, and Flutter in my own time.",
   email: "TODO@example.com", // TODO: fill in the email you want public
   github: "https://github.com/SawK0",

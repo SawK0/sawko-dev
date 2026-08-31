@@ -19,7 +19,7 @@ export function Contact() {
           <li key={link.label}>
             <a
               href={link.href}
-              className="text-sm font-medium underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-600 dark:decoration-neutral-700 dark:hover:decoration-neutral-400"
+              className="text-accent text-sm font-medium underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
             >
               {link.label}
             </a>
