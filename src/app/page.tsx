@@ -7,13 +7,15 @@ import { Skills } from "@/components/Skills";
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-3xl px-6">
+    <>
       <Nav />
-      <Hero />
-      <Projects />
-      <Skills />
-      <About />
-      <Contact />
-    </div>
+      <div className="mx-auto max-w-3xl px-6">
+        <Hero />
+        <Projects />
+        <Skills />
+        <About />
+        <Contact />
+      </div>
+    </>
   );
 }
